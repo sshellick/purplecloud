@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PurpleCloud 🚀</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #4F2683, #7A4DFF);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      background: white;
+      color: #333;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 20px;
+      width: 85%;
+      max-width: 600px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+      background: #4F2683;
+      color: white;
+      border: none;
+      padding: 14px 25px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #3b1c66;
+      transform: scale(1.05);
+    }
+
+    .message {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #4F2683;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 20px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>PurpleCloud ☁️🚀</h1>
+    <p class="subtitle">My first Azure web app — AIRC @ Western</p>
+  </header>
+
+  <div class="container">
+    <h2>Welcome 👋</h2>
+    <p>This app is running locally… for now.</p>
+
+    <button onclick="launchApp()">Launch My Cloud Journey</button>
+
+    <p id="output" class="message"></p>
+  </div>
+
+  <footer>
+    AIRC | Western University | London, Ontario
+  </footer>
+
+  <script>
+    function launchApp() {
+      document.getElementById("output").innerText =
+        "🎉 You just launched your web app! Next step: deploy to Azure!";
+    }
+  </script>
+
+</body>
+</html>
